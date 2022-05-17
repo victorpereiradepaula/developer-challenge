@@ -12,6 +12,7 @@ import UIKit
 
 struct Dog {
     let name: String
+    let phrase = "Auau, Auau"
     let imageName: String
     
     public init(name: String, imageName: String) {

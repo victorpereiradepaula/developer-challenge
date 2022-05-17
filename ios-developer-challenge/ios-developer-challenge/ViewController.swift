@@ -26,7 +26,7 @@ final class ViewController: UIViewController {
         Cat(name: "Gato sinuca", imageName: "snooker_cat"),
         Cat(name: "Gato dominhoco", imageName: "sleeping_cat"),
         Cat(name: "Gato sinuca", imageName: "snooker_cat"),
-        Dog(name:"Cachorro coelho",imageName:""),
+        Dog(name: "Cachorro coelho",imageName: ""),
     ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -39,6 +39,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     func removeDuplicatedContent() {
@@ -62,5 +63,25 @@ extension ViewController: UITableViewDataSource {
             cell.setup(dog: currentDog, index: indexPath.row)
         }
         return cell
+    }
+}
+
+// MARK: UITableViewDelegate
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var alertTitle = ""
+        var alertMessage: String = ""
+        if let gato_atual = cats[indexPath.row] as? Cat {
+            alertTitle = "Gatos falam"
+            alertMessage = gato_atual.phrase
+        } else if let currentDog = cats[indexPath.row] as? Dog {
+            alertTitle = "Cachorros falam"
+            alertMessage = currentDog.phrase
+        }
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Fechar", style: .default)
+        alertController.addAction(alertAction)
+        
+        present(alertController, animated: true)
     }
 }

@@ -12,3 +12,4 @@ Desafio para avaliação técnica de desenvolvedores.
 - Permitido pesquisas no internet
 - Tela compartilhada
 - Duração 1h
+- Lembre-se de ler atentamente as instruções de cada etapa

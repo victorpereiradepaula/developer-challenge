@@ -19,6 +19,8 @@
 		7F01B9EE2832F51E004EBD9A /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01B9ED2832F51E004EBD9A /* Cat.swift */; };
 		7F01B9F12832F8F3004EBD9A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01B9EF2832F8F3004EBD9A /* TableViewCell.swift */; };
 		7F01B9F22832F8F3004EBD9A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F01B9F02832F8F3004EBD9A /* TableViewCell.xib */; };
+		7FFA724C2833D4B60032595D /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA724B2833D4B60032595D /* Dog.swift */; };
+		B4AC66FC287345A0004FB2BE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC66FB287345A0004FB2BE /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		7F01B9ED2832F51E004EBD9A /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		7F01B9EF2832F8F3004EBD9A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7F01B9F02832F8F3004EBD9A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		7FFA724B2833D4B60032595D /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		B4AC66FB287345A0004FB2BE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				7F01B9BD2832F06B004EBD9A /* AppDelegate.swift */,
 				7F01B9BF2832F06B004EBD9A /* SceneDelegate.swift */,
+				7FFA724B2833D4B60032595D /* Dog.swift */,
 				7F01B9ED2832F51E004EBD9A /* Cat.swift */,
 				7F01B9EF2832F8F3004EBD9A /* TableViewCell.swift */,
 				7F01B9F02832F8F3004EBD9A /* TableViewCell.xib */,
@@ -115,6 +120,7 @@
 				7F01B9C62832F06D004EBD9A /* Assets.xcassets */,
 				7F01B9C82832F06D004EBD9A /* LaunchScreen.storyboard */,
 				7F01B9CB2832F06D004EBD9A /* Info.plist */,
+				B4AC66FB287345A0004FB2BE /* ViewModel.swift */,
 			);
 			path = "ios-developer-challenge";
 			sourceTree = "<group>";
@@ -270,9 +276,11 @@
 			files = (
 				7F01B9F12832F8F3004EBD9A /* TableViewCell.swift in Sources */,
 				7F01B9EE2832F51E004EBD9A /* Cat.swift in Sources */,
+				7FFA724C2833D4B60032595D /* Dog.swift in Sources */,
 				7F01B9C22832F06B004EBD9A /* ViewController.swift in Sources */,
 				7F01B9BE2832F06B004EBD9A /* AppDelegate.swift in Sources */,
 				7F01B9C02832F06B004EBD9A /* SceneDelegate.swift in Sources */,
+				B4AC66FC287345A0004FB2BE /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

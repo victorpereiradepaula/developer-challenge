@@ -18,4 +18,10 @@ final class TableViewCell: UITableViewCell {
         titleLabel.text = cat.name
         indexLabel.text = "\(index)"
     }
+    
+    public func setup(dog: Dog, index: Int) {
+        sampleImage.image = dog.image
+        titleLabel.text = dog.name
+        indexLabel.text = "\(index)"
+    }
 }

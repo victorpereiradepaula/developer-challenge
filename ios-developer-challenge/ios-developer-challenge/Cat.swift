@@ -9,6 +9,7 @@ import UIKit
 
 struct Cat {
     let name: String
+    let phrase: String = "Meow, meow"
     private let imageName: String
     
     public init(name: String, imageName: String) {

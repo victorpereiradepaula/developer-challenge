@@ -8,7 +8,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    
     var cats: [Any] = [
         Cat(name: "Gato onça", imageName: "jaguar_cat"),
         Cat(name: "Gato caixa", imageName: "box_cat"),
@@ -28,21 +27,26 @@ final class ViewController: UIViewController {
         Cat(name: "Gato sinuca", imageName: "snooker_cat"),
         Dog(name: "Cachorro coelho",imageName: ""),
     ]
+    
+    var viewModel = ViewModel()
 
     @IBOutlet weak var tableView: UITableView!
-    @IBAction func buttonAction(_ sender: UIButton) {
-        removeDuplicatedContent()
-        tableView.reloadData()
-    }
-    
+    @IBOutlet weak var titleLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
+        viewModel.loadTitle()
     }
     
-    func removeDuplicatedContent() {
+    @IBAction func buttonAction(_ sender: UIButton) {
+        handleList()
+        tableView.reloadData()
+    }
+    
+    func handleList() {
         // TODO: Your code here
     }
 }
@@ -83,5 +87,12 @@ extension ViewController: UITableViewDelegate {
         alertController.addAction(alertAction)
         
         present(alertController, animated: true)
+    }
+}
+
+// MARK: ViewModelDelegate
+extension ViewController: ViewModelDelegate {
+    func viewModelDidLoadTitle(title: String) {
+        titleLabel.text = title
     }
 }

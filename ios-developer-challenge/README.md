@@ -11,7 +11,8 @@ Desafio para avaliação técnica de desenvolvedores iOS.
 
 - Duração 30 minutos
 - Pair programming
-- Criar um algoritmo que remova elementos duplicados da listagem e incluir no método `removeDuplicatedContent` da classe `ViewController`
+- Implementar o método `handleList()` que tem como objetivo tratar a lista `var cats: [Cat]` removendo elementos duplicados e deixando o nome dos gatos (`name`) em letras maiúsculas.
+- O método pode ser localizado na classe `ViewController`
 
 ### Segunda parte:
 

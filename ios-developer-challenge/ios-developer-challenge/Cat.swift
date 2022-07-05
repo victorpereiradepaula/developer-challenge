@@ -9,7 +9,7 @@ import UIKit
 
 struct Cat {
     let name: String
-    private let imageName: String
+    let imageName: String
     
     public init(name: String, imageName: String) {
         self.name = name

@@ -28,7 +28,7 @@ final class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBAction func buttonAction(_ sender: UIButton) {
-        removeDuplicatedContent()
+        handleList()
         tableView.reloadData()
     }
     
@@ -38,7 +38,7 @@ final class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    func removeDuplicatedContent() {
+    func handleList() {
         // TODO: Your code here
     }
 }
